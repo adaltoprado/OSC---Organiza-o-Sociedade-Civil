@@ -9,8 +9,9 @@
         .login-container { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
         h2 { text-align: center; color: #333; }
         input[type="text"], input[type="password"] { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
-        input[type="submit"] { width: 100%; padding: 10px; background-color: #5cb85c; color: white; border: none; border-radius: 4px; cursor: pointer; }
-        input[type="submit"]:hover { background-color: #4cae4c; }
+        /* Alterei o seletor de CSS para funcionar com o type="button" também */
+        input[type="submit"], input[type="button"] { width: 100%; padding: 10px; background-color: #5cb85c; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        input[type="submit"]:hover, input[type="button"]:hover { background-color: #4cae4c; }
         .error-message { color: red; text-align: center; margin-top: 10px; }
     </style>
 </head>
@@ -18,17 +19,27 @@
 
     <div class="login-container">
         <h2>Projeto OSC: Instituto São Paulo em Movimento</h2>
-        <form action="processar_login.php" method="POST">
+        
+        <form id="login-form">
             <label for="nome_usuario">Usuário:</label>
             <input type="text" id="nome_usuario" name="nome_usuario" required>
 
             <label for="senha">Senha:</label>
             <input type="password" id="senha" name="senha" required>
 
-            <input type="submit" value="Entrar">
+            <input type="button" id="botao-entrar" value="Entrar">
             
         </form>
     </div>
+
+    <script>
+        // Pega o botão pelo ID que demos a ele
+        document.getElementById("botao-entrar").onclick = function() {
+            // Redireciona o usuário para a página menu.html
+            // Certifique-se que você tem um arquivo chamado "menu.html" no seu repositório!
+            window.location.href = "menu.html";
+        };
+    </script>
 
 </body>
 </html>
