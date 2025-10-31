@@ -57,6 +57,21 @@ Para testar ou desenvolver este projeto na sua máquina, você precisará de um 
 
 ---
 
+## 👨‍💻 Autores
+
+Este projeto foi desenvolvido com a colaboração de:
+
+* ADALTO DE JESUS PRADO
+* ANTONIO MANUEL DA SILVA JUNIOR
+* BEATRIZ DA SILVA ALVES
+* GABRIELA CRISTINA RIBEIRO
+* JOAO OCTAVIO NOBREGA FERREIRA DE SOUZA LIMA
+* NILSON BRANDAO
+* RENAN LUNARDELI DOS SANTOS
+* SUEVALDA RIBEIRO DE SANTANA SILVA
+
+---
+
 ## 🤝 Contribuição
 
 Sinta-se à vontade para abrir *issues* ou enviar *pull requests*. Toda ajuda para melhorar a gestão desse serviço tão importante é bem-vinda!
